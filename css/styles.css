@@ -1,0 +1,369 @@
+/* ------------------------- FONTS ------------------------- */
+
+
+
+/* ------------------------- GENERAL STYLES ------------------------- */
+*, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+}
+
+body, html {
+    height: 100%;
+}
+
+h1 {}
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+h3 {
+}
+h4 {}
+h5 {}
+h6 {}
+
+a, a:visited {
+}
+
+a:hover, a.is-active, a:focus {
+    outline: none;
+}
+
+p, li {
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+::selection {
+    color: #fff;
+    background: #a3ab24;
+}
+
+
+
+/* ------------------------- FORMS ------------------------- */
+input::-webkit-input-placeholder, textarea::-webkit-textarea-placeholder { opacity: 1; color: #636363; }
+input:-moz-placeholder, textarea:-moz-placeholder { opacity: 1; color: #636363; }
+input::-moz-placeholder, textarea::-moz-placeholder { opacity: 1; color: #636363; }
+input:-ms-input-placeholder, textarea:-ms-textarea-placeholder { opacity: 1; color: #636363; }
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-textarea-placeholder { opacity: 0.25; }
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { opacity: 0.25 }
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { opacity: 0.25 }
+input:focus:-ms-input-placeholder, textarea:focus:-ms-textarea-placeholder { opacity: 0.25 }
+input.error::-webkit-input-placeholder, textarea.error::-webkit-textarea-placeholder { color: #f00; opacity: 1; filter : alpha(opacity=10); }
+input.error:-moz-placeholder, textarea.error:-moz-placeholder { color: #f00; opacity: 1; filter : alpha(opacity=100); }
+input.error::-moz-placeholder, textarea.error::-moz-placeholder { color: #f00; opacity: 1; filter : alpha(opacity=100); }
+input.error:-ms-input-placeholder, textarea.error:-ms-textarea-placeholder { color: #f00; }
+
+:focus {
+    outline: none;
+}
+
+
+
+/* ------------------------- USER GLOBAL SPECIAL STYLES ------------------------- */
+
+
+
+/* ------------------------- SLIDER ------------------------- */
+
+
+
+
+/* ------------------------- NAVIGATION ------------------------- */
+#nav_mobile {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,0);
+}
+
+.logo {
+    width: 200px;
+    height: 55px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav li {
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+nav a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+nav a:hover, nav a:focus, nav a.is-active {
+    color: #A89DB5;
+}
+
+.nav_main{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #A89DB5;
+}
+
+/* ------------------------- IMG HOMPAGE ------------------------- */
+.bg { 
+    /* The image used */
+    background-image: url("../img/Artisan.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------- HOME ------------------------- */
+.text_home p{
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+
+.Tamawa{
+    background-color: #5E616B;
+    width: 100%;
+    height: 300px;
+}
+
+.Tamawa2{
+    background-color: #5E616B;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px; 
+}
+
+.btn{
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #454545;
+    color: #fff;
+    border-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+/* ------------------------- COLLECTION ------------------------- */
+.watch{
+    width: 140px;
+    height: 240px;
+}
+
+.tout h4{
+    padding-left: 45px;
+    padding-top: 30px;
+}
+
+.tout{
+    margin-left: 200px;
+}
+
+.tout h5{
+    padding-left: 55px;
+}
+
+.tout .bouton{
+    margin-left: 55px;
+}
+
+.bouton{
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #454545;
+    color: #fff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+
+/* ------------------------- FORMULAIRE ------------------------- */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #454545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #BFBFBF;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.adresse{
+    font-family: arial, serif;
+}
+
+.form{
+    margin-left: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+/* ------------------------- FOOTER ------------------------- */
+footer {
+    padding: 60px 0;
+}
+
+
+
+/* ------------------------- MAIN CONTENT ------------------------- */
+.main {
+    margin-top: 60px; /* same height as header */
+}
+
+.cycle-slideshow {
+    max-height: 390px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.cycle-slideshow img {
+    height: auto;
+    width: 100%;
+}
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; bottom: 5px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #fff; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #000; }
+.cycle-pager > * { cursor: pointer;}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++ RESPONSIVE NAVIGATION +++++++++++++++++++++++++++++ */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        -moz-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+    }
+    nav.navOpen {
+        left: 0;
+    }
+    nav ul {
+        margin-top: 80px;
+    }
+    nav li {
+        float: none;
+    }
+    nav a {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    nav a:hover, nav a:focus, nav a.is-active {
+        border: none;
+        background: none;
+    }
+    #nav_mobile {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;    
+        z-index: 10000;
+        width: 40px;
+        height: 40px;
+        padding: 12px 11px;
+        background-color: #fff;
+        border-radius: 100%;
+        cursor: pointer;
+        -moz-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+        color:#000;
+    }
+    #nav_mobile span {
+        display: block;
+        height: 4px;
+        margin: 2px 0;
+        border-radius: 2px;
+        background-color: #000;
+        -moz-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s;
+    }
+    #nav_mobile span:first-child {
+            margin-top: 0;
+        }
+    }           
+    #nav_mobile.navOpen {
+        background-color: #000;
+        color: #fff;
+    }
+    #nav_mobile.navOpen span {
+        background: #fff;
+    }
+    #nav_mobile.navOpen span:first-of-type {
+        margin-top: 6px;
+        transform: rotate(45deg);
+    }
+    #nav_mobile.navOpen span:nth-of-type(2) {
+            opacity: 0;
+        } 
+    #nav_mobile.navOpen span:last-of-type {
+        margin-top: -12px;
+        transform: rotate(-45deg);
+    }              
+}
